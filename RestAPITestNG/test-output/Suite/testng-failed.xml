@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utility.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="automation.EmployeesList">
+        <methods>
+          <include name="getEmployeesList"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automation.EmployeesList -->
+      <class name="automation.DeleteEmployee">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteEmployee"/>
+        </methods>
+      </class> <!-- automation.DeleteEmployee -->
+      <class name="automation.CreateEmployee">
+        <methods>
+          <include name="postCreate"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automation.CreateEmployee -->
+      <class name="automation.EmployeeDetails">
+        <methods>
+          <include name="getEmployeeDetails"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automation.EmployeeDetails -->
+      <class name="automation.UpdateEmployee">
+        <methods>
+          <include name="putUpdateEmployee"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- automation.UpdateEmployee -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
